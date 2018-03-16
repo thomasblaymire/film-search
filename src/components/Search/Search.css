@@ -1,0 +1,17 @@
+/* Search */
+.Search {
+  background: #dbe6ea;
+  border-radius: 15px;
+}
+
+input {
+  background: #dbe6ea;
+  border: none;
+  padding: 1.7rem 2rem;
+  width: 100%;
+  transition: all .2s;
+  margin-right: -3.25rem;
+  font-size: 1.8rem;
+  font-family: Roboto, sans-serif;
+  border-radius: 5px;
+}

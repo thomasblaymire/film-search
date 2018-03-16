@@ -1,0 +1,11 @@
+.MovieList {
+  grid-column: center-start / center-end;
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 4rem;
+  align-items: start;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
