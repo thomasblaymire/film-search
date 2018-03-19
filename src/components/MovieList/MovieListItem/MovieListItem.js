@@ -8,8 +8,8 @@ const MovieListItem = (props) => {
 
     return (
         <div className={classes.MovieListItem}>
-            <img className={classes.MovieListItem__Image} src={imageURL} alt={props.title} /> 
-            <span className={classes.MovieListItem__Raating}>{props.rating}</span>
+            <img className={classes.MovieListItem__Image} src={imageURL} alt={props.title} />
+            <span className={classes.MovieListItem__Raating} style={{ color: "green" }}>{props.rating}</span>
             <div className={classes.MovieListItemDetails}>
                 <h3 className={classes.MovieListItem__Title}>{props.title}</h3>
                 <p className={classes.MovieListItem__Description}>{props.description}</p>
