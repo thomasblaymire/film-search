@@ -7,7 +7,7 @@
 <h4 align="center">A minimal ReactJS, ES6, CSS Grid Film Search</h4>
 
 ## Live URL
-<strong>Live URL: </strong><a href="https://estate-project-d9fb0.firebaseapp.com/" target="_blank">Click Here</a>
+<strong>Live URL: </strong><a href="https://film-search-28cf5.firebaseapp.com/" target="_blank">Click Here</a>
 
 ## Key Features
 
