@@ -3,22 +3,43 @@
   border: solid 1px #dedede;
   opacity: 1;
   border-radius: 3px;
-  height: 38rem;
-  height: auto;
+  height: 45rem;
   transition: all .4s ease;
   text-align: left;
   text-decoration: none;
   margin: 0 auto;
-  padding: 2rem;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
-.MovieList__Title {
+.MovieListItem__Title {
   font-size: 2rem;
   padding-top: 1rem;
 }
 
-.MovieList__Description {
+.MovieListItem__Description {
   font-size: 1.5rem;
   padding-top: 1rem;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 11rem;
+
+}
+
+.MovieListItem__Image {
+  width: 100%;
+  height: 20rem;
+}
+
+.MovieListItemDetails {
+  padding: 2rem;
+}
+
+.MovieListItem__Raating {
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+  padding: 1rem;
+  background: white;
+  border-radius: 50px;
 }

@@ -4,12 +4,16 @@ import classes from './MovieListItem.css';
 
 const MovieListItem = (props) => {
 
+   let imageURL = 'http://image.tmdb.org/t/p/w780//' + props.image;
+
     return (
         <div className={classes.MovieListItem}>
-            <img className={classes.MovieList__Image} alt="Movie Image" /> 
-            <span className={classes.MovieList__Raating}>10</span>
-            <h3 className={classes.MovieList__Title}>Movie Title</h3>
-            <p className={classes.MovieList__Description}>T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's father's mistake.</p>
+            <img className={classes.MovieListItem__Image} src={imageURL} alt={props.title} /> 
+            <span className={classes.MovieListItem__Raating}>{props.rating}</span>
+            <div className={classes.MovieListItemDetails}>
+                <h3 className={classes.MovieListItem__Title}>{props.title}</h3>
+                <p className={classes.MovieListItem__Description}>{props.description}</p>
+            </div>
         </div>
     );
 

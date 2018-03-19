@@ -1,43 +1,24 @@
 import React, { Component } from "react";
 import classes from "./MovieList.css";
 
-import MovieListItem from './MovieListItem/MovieListItem';
-
-import axios from 'axios';
+import MovieListItem from "./MovieListItem/MovieListItem";
 
 class MovieList extends Component {
-  state = {
-
-  }
-
-  componentDidMount() {
-    this.fetchMovies();
-  }
-
-  fetchMovies = (term) => {
-    const ROOT_URL = 'https://api.themoviedb.org/3/search/movie?api_key=';
-    const API_KEY = 'a02ae9c833165463b7ef033a6f9ae01e';
-
-    console.log(term);
-    return function(dispatch) {
-      axios.get(`${ROOT_URL} + ${API_KEY}&language=en-US&query=`+ term).then(res => res.json);
-    }
-  }
-
   render() {
+    console.log(this.props.movieData);
+
     return (
-        <div className={classes.MovieList}>
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-          <MovieListItem />
-        </div>
+      <div className={classes.MovieList}>
+        {this.props.movieData.slice(0, 12).map(movie => (
+          <MovieListItem
+            key={movie.id}
+            image={movie.backdrop_path}
+            title={movie.title}
+            description={movie.overview}
+            rating={movie.vote_average}
+          />
+        ))}
+      </div>
     );
   }
 }
