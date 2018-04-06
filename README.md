@@ -9,6 +9,10 @@
 ## Live URL
 <strong>Live URL: </strong><a href="https://film-search-28cf5.firebaseapp.com/" target="_blank">Click Here</a>
 
+## Demo
+![](https://github.com/thomasblaymire/Film-Search/demo.gif?raw=true)
+
+
 ## Key Features
 
 * Using Open Movie API
